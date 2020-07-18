@@ -9,7 +9,9 @@ export class InMemoryDataService implements InMemoryDbService{
 
   constructor() { }
 
-  createDb(reqInfo?: RequestInfo): {} | Observable<{}> | Promise<{}> {
+  // @ts-ignore
+  public createDb(reqInfo?: RequestInfo): {}
+  {
     const heroes = [
       { id: 11, name: 'Dr Nice' },
       { id: 12, name: 'Narco' },
